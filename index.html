@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <div class="d-flex justify-content-end">
+            <div class="left  d-flex justify-content-end">
+                <img class="image" src="images/cocktail_right.png" alt="">
+            </div>
+            <div class="right d-flex justify-content-start">
+                <div>
+                    <h2 class="text-center">Welcome to TheCocktailDB</h2>
+                    <p>An open, crowd-sourced database of drinks and cocktails from around the world. <br>
+                        We also offer a free JSON API for anyone wanting to use it.
+                        If you like the site, <br> please consider supporting us on Patreon by clicking the link below...</p>
+                </div>
+                <div>
+                    <img class="image "src="images/cocktail_right.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container mt-5">
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-input" type="text" class="form-control" placeholder="Search Cocktail"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchCocktail()" class="btn btn-outline-primary " type="button"
+                    id="button-search">Search</button>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div  id="display-cocktails" class="row row-cols-1 row-cols-md-3 g-4" >
+    
+            </div>
+           </section>
+       <section class="container mt-5">
+        <div  id="display-search" class="row row-cols-1 row-cols-md-3 g-4">
+
+        </div>
+       </section>
+      
+    </main>
+
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="db.js"></script>
+
+</html>
